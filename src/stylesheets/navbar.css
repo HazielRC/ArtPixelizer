@@ -1,0 +1,86 @@
+.navigation {
+  flex-direction: row;
+  background-color: #171717;
+  border-radius: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.brand-name {
+  color: #EDEDED;
+}
+
+.brand-name span {
+  color: #f18a4f;
+}
+
+.brand-logo {
+  height: 32px;
+  width: 32px;
+  margin: 0 10px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #EDEDED;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.nav-button {
+  background-color: #f18a4f;
+  padding: 6px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 18px;
+  color: #EDEDED;
+  transition: 300ms;
+}
+
+.nav-link:hover {
+  color: #f18a4f;
+  transition: 300ms;
+}
+
+@media screen and (max-width: 680px) {
+  .nav-button span {
+    display: none;
+  }
+  .nav-link span {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .brand-name {
+    display: none;
+  }
+}
